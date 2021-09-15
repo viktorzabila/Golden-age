@@ -1,0 +1,49 @@
+@media (max-width: 990px) {
+    .section {
+        margin: 20px 0;
+    }
+
+    .our-portfolio__item {
+        display: flex;
+        flex-direction: column;
+    }
+    .our-portfolio__icon {
+        width: 380px;
+        margin-top: 20px;
+        margin: 30px auto;
+    }
+    .our-portfolio__icon--top-media {
+        margin-top: 0;
+    }
+}
+
+//================== Media ======================//
+@media (max-width: 576px) {
+    .section {
+        margin: 20px 0;
+    }
+
+    .our-portfolio__item {
+        display: flex;
+        flex-direction: column;
+    }
+    .our-portfolio__icon {
+        width: 380px;
+        margin-top: 20px;
+    }
+    .our-portfolio__icon--top-media {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .our-portfolio__icon {
+        width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    .our-portfolio__icon {
+        width: 200px;
+    }
+}

@@ -1,0 +1,50 @@
+.section {
+    margin: 120px 0;
+}
+
+.about-us__content {
+    display: flex;
+    flex-direction: column;
+}
+.about-us__item {
+    position: relative;
+
+    width: 100%;
+    margin: 0 auto 80px;
+}
+.about-us__icon {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+.about-us__description {
+    position: absolute;
+    top: 15px;
+    right: 110px;
+    z-index: 1;
+
+    width: 280px;
+}
+.about-us__date {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about-us__title {
+    color: #222222;
+    font-size: 15px;
+    font-weight: 700;
+}
+.about-us__text {
+    color: #777777;
+}
+
+.about-us__description--left {
+    left: 110px;
+    text-align: right;
+}
+
+.about-us__item--bot {
+    margin-bottom: 0;
+}

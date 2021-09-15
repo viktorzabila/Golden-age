@@ -1,0 +1,32 @@
+{
+  "author": {
+    "name": "Nikita Babko",
+    "email": "niki.babko@gmail.com"
+  },
+  "name": "golden-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
+  },
+  "license": "ISC",
+  "homepage": "http://nikitababko.github.io/landing-page-golden-page",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^5.0.0"
+  }
+}

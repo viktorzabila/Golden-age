@@ -1,0 +1,59 @@
+@import "./reset.scss"; // reset styles
+
+.container {
+    max-width: 1250px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.section__header {
+    line-height: 1.8;
+
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+body {
+    font-family: "Arial Regular";
+}
+
+h2,
+h4 {
+    font-family: "Arial Bold";
+}
+
+@import "./fonts/_fonts.scss";
+
+@import "./components/_header.scss";
+@import "./components/_intro.scss";
+@import "./components/_section-services.scss";
+@import "./components/_section-our-portfolio.scss";
+@import "./components/_section-about-us.scss";
+@import "./components/_footer.scss";
+
+// MEDIA
+
+@import "./media/_media-header.scss";
+@import "./media/_media-intro.scss";
+@import "./media/_media-section-services.scss";
+@import "./media/_media-section-our-portfolio.scss";
+@import "./media/_media-section-about-us.scss";
+@import "./media/media-footer";
+
+// FONTAWESOME CONFIG
+
+@import "./fonts/fontawesome/variables";
+@import "./fonts/fontawesome/mixins";
+@import "./fonts/fontawesome/core";
+@import "./fonts/fontawesome/larger";
+@import "./fonts/fontawesome/fixed-width";
+@import "./fonts/fontawesome/list";
+@import "./fonts/fontawesome/bordered-pulled";
+@import "./fonts/fontawesome/animated";
+@import "./fonts/fontawesome/rotated-flipped";
+@import "./fonts/fontawesome/stacked";
+@import "./fonts/fontawesome/icons";
+@import "./fonts/fontawesome/screen-reader";
+@import "./fonts/fontawesome/regular.scss";
+@import "./fonts/fontawesome/brands.scss";
+@import "./fonts/fontawesome/solid.scss";

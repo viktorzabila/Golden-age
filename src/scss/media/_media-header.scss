@@ -1,0 +1,143 @@
+//================== Media ======================//
+
+@media (max-width: 768px) {
+    .header {
+        .container {
+            padding: 0;
+        }
+    }
+
+    .header__inner {
+        display: block;
+        position: relative;
+    }
+
+    .header__logo {
+        padding: 5px 0 0 45px;
+    }
+
+    .header__nav {
+        position: absolute;
+
+        display: none;
+
+        margin-top: 25px;
+        padding: 20px 0;
+
+        background: #fed136;
+        width: 100%;
+        transition: all 0.3s linear;
+        ul {
+            display: block;
+            padding-left: 20px;
+        }
+    }
+
+    .header__link {
+        margin: 0;
+
+        color: #484543;
+        font-size: 30px;
+
+        transition: all 0.3s linear;
+    }
+
+    .header__link:hover {
+        padding: 0 50px 0 100px;
+        background: #484543;
+        color: #fed136;
+    }
+
+    //////////////////////////////////////   Class for js   ///////////////////////////////////
+    //====================   Используется для добавления класса через скрипт   ==============//
+    .header__nav--active {
+        display: block;
+    }
+    ///////////////////////////////////////////////////////////////////////////////////////////
+
+    .header__toggle {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        padding: 8px;
+        cursor: pointer;
+
+        display: block;
+    }
+
+    .header__burger-menu {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 6px;
+        background: #fed136;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: -15px;
+            display: block;
+            content: "";
+            width: 50px;
+            height: 5px;
+            background: #fed136;
+            transition: transform 0.3s linear;
+        }
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 15px;
+            display: block;
+            content: "";
+            width: 50px;
+            height: 5px;
+            background: #fed136;
+            transition: transform 0.3s linear;
+        }
+    }
+
+    //////////////////////////////////////   Class for js   ////////////////////////////////
+    //====================   Используется для добавления класса через скрипт   ==============//
+    .header__burger-menu--active {
+        position: relative;
+        width: 50px;
+        height: 5px;
+
+        background: transparent;
+    }
+
+    .header__burger-menu--active::before {
+        transform-origin: left top;
+        transform: rotate(45deg) translate3d(0px, -2px, 0);
+    }
+
+    .header__burger-menu--active::after {
+        transform-origin: left bottom;
+        transform: rotate(-45deg) translate3d(0px, 3px, 0);
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////   Class for js   ////////////////////////////////
+    //====================   Используется для добавления класса через скрипт   ==============//
+    .header--fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+
+        background: #484543;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+        transition: all 0.3s;
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+}
+
+@media (max-width: 576px) {
+    .header {
+        .container {
+            max-width: 576px;
+        }
+    }
+}
